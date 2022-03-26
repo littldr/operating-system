@@ -41,7 +41,7 @@ jobs:
     strategy:
       matrix:
         board:
-          - {"name": "generic_x86_64", "output": "generic-x86-64", "runner": "x86-64-runner"}
+          - {"name": "generic_x86_64", "output": "generic-x86-64", "runner": "ubuntu-20.04"}
     runs-on: ${{ matrix.board.runner }}
 
     steps:
